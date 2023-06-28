@@ -1,0 +1,27 @@
+{
+  "name": "shayari-generator-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TejasPedge/Shayari-generator-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TejasPedge/Shayari-generator-backend/issues"
+  },
+  "homepage": "https://github.com/TejasPedge/Shayari-generator-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "openai": "^3.3.0",
+    "readline-sync": "^1.4.10"
+  }
+}
