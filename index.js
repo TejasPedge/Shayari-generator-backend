@@ -12,7 +12,7 @@ app.use(cors());
 const limiter = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 hour
   max: 5, // Maximum 5 requests per hour
-  message: { error: 'Rate limit exceeded. Please try again later.' },
+  message: { error: 'Rate limit exceeded. Please try again after 1 hour.' },
 });
 
 // Apply rate limiter middleware
