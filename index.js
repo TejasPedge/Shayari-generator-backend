@@ -33,7 +33,7 @@ const messeges = [
     ];
 
 
-app.get('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:word', async (req, res) => {
+app.get('/generate-shayari/:word', async (req, res) => {
   try {
 
     const { word } = req.params;
@@ -43,7 +43,7 @@ app.get('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:word', async (req, 
     const response = await generateShayari(messeges,res);
 
     // Send the generated Shayari as the response
-
+    console.log(response);
     messeges.push(response.data.choices[0].message);
 
     let shayari = response.data.choices[0].message.content;
