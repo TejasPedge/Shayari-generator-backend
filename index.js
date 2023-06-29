@@ -1,10 +1,11 @@
 require('dotenv').config();
+const cors = require('cors');
 const express = require('express');
 const { Configuration, OpenAIApi } = require('openai');
 
 const app = express();
 const port = 8080; // Use any port number you prefer
-
+app.use(cors());
 // Set up OpenAI
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY
@@ -32,7 +33,7 @@ const messeges = [
     ];
 
 
-app.get('/generate-shayari/:word', async (req, res) => {
+app.get('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:word', async (req, res) => {
   try {
 
     const { word } = req.params;
